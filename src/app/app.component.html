@@ -1,6 +1,4 @@
-<mat-tab-group>
-  <mat-tab label="Cat facts">
-  </mat-tab>
-  <mat-tab label="Dog facts">
-  </mat-tab>
-</mat-tab-group>
+<mat-button-toggle-group (change)="onFactsSourceChange($event)">
+  <mat-button-toggle value="cats">Cat facts</mat-button-toggle>
+  <mat-button-toggle value="dogs">Dog facts</mat-button-toggle>
+</mat-button-toggle-group>
