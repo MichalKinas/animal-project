@@ -2,6 +2,16 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.5.
 
+# Tasks
+
+- have a quick overview of the project structure
+- get familiar with [CatService](./src/app/services/cat.service.ts) and [DogService](./src/app/services/dog.service.ts) services as well as [CatFact](./src/app/models/cat-fact.ts) and [DogFact](./src/app/models/dog-fact.ts) interfaces
+- create reusable `AnimalFactList` component in `src/app/components/animal-fact-list` directory
+- `AnimalFactList` component should be able to display a list of animal facts coming from different fact services e.g. [CatService](./src/app/services/cat.service.ts) or [DogService](./src/app/services/dog.service.ts) (potentially also different ones in the future)
+- in `App` component introduce [Tabs](https://material.angular.io/components/tabs/overview) component to display cat and dog facts lists using created `AnimalFactList` component, each list should be displayed in separate tab
+- add unit tests to cover `AnimalFactList` component functionalities
+
+# Resources
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
@@ -10,17 +20,9 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The appli
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
 ## Running unit tests
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
 ## Further help
 
