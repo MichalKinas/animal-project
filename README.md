@@ -7,7 +7,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 - have a quick overview of the project structure
 - get familiar with [CatService](./src/app/services/cat.service.ts) and [DogService](./src/app/services/dog.service.ts) services as well as [CatFact](./src/app/models/cat-fact.ts), [CatFactsResponse](./src/app/models/cat-facts-response.ts), [DogFact](./src/app/models/dog-fact.ts) and [DogFactsResponse](./src/app/models/dog-facts-response.ts) interfaces
 - create reusable `AnimalFactList` component in `src/app/components/animal-fact-list` directory
-- `AnimalFactList` component should be able to display a list of animal facts coming from different fact services e.g. [CatService](./src/app/services/cat.service.ts) or [DogService](./src/app/services/dog.service.ts) (potentially also different ones in the future)
+- `AnimalFactList` component should be able to display a list of animal facts coming from different fact services e.g. [CatService](./src/app/services/cat.service.ts) or [DogService](./src/app/services/dog.service.ts)
+- created component should be independent from specific fact services as their number will grow in the future
 - in `App` component you will find [Button toggle](https://material.angular.io/components/button-toggle/overview) component with cat facts and dog facts options, using created `AnimalFactList` component display each fact list when toggle state changes. You can use any known method to provide correct fact services for `AnimalFactList` component however using Strategy design pattern is preferred
 - add unit tests to cover functionalities in selected components/services
 
